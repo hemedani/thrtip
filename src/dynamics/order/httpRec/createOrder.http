@@ -1,0 +1,21 @@
+
+POST http://localhost:8000/funql HTTP/1.1
+content-type: application/json
+token:eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDAyNDQxODEuMDIzLCJ1c2Vyc0lkIjoiNjBkMWNkYTI3OGUzZjkwNTU4OTRlMDI3In0.t0JqV-lflf99RYgEEVy2m_MmW_k8XLSr6jQZpeUMmZbjmS4tZA4-GJYimF0z_8KUr_EoKQABzTaX6RV-3IrSDQ
+
+{
+    "details":{
+        "set":{
+            "shoppingCartId":"60db279d4caf6777908d95c3",
+            "paymentStatus":"PAID",
+            "orderStatus":"PROCESSING",
+            "description":"hi"
+        },
+        "get":{ 
+        }
+    },
+    "wants":{
+        "model":"Order",
+        "doit":"createOrder"
+    }
+}

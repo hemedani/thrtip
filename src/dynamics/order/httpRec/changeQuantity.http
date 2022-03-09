@@ -1,0 +1,22 @@
+
+POST http://localhost:8000/funql HTTP/1.1
+content-type: application/json
+token:eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDAyNDQxODEuMDIzLCJ1c2Vyc0lkIjoiNjBkMWNkYTI3OGUzZjkwNTU4OTRlMDI3In0.t0JqV-lflf99RYgEEVy2m_MmW_k8XLSr6jQZpeUMmZbjmS4tZA4-GJYimF0z_8KUr_EoKQABzTaX6RV-3IrSDQ
+
+{
+    "details":{
+        "set":{
+            "orderId":"60db21289fa5a28a9074b2b1",
+            "wareId":"60d6d44bdf52b722c3c57863",
+            "quantity":7
+
+        },
+        "get":{
+
+        }
+    },
+    "wants":{
+        "model":"Order",
+        "doit":"changeQuantityOfWareInOrder"
+    }
+}
