@@ -4,11 +4,9 @@ import {
   countrySelectable,
   ICity,
   ICountry,
-  IOrder,
   IState,
   PuRelCity,
   PuRelCountry,
-  PuRelOrder,
   PuRelState,
   RCity,
   RCountry,
@@ -98,8 +96,6 @@ export interface RelUser {
   country?: ObjectID | ICountry;
   state?: ObjectID | IState;
   city?: ObjectID | ICity;
-  /**the last 50 orders of user are kept inside the collection*/
-  orders?: ObjectID[] | IOrder[];
 }
 
 export interface PuRelUser extends PuUser, RelUser {}
@@ -111,8 +107,6 @@ export interface PuRelUser extends PuUser, RelUser {}
  */
 export interface EmUser {
   addresses?: UserAddress[];
-  /**the last 50 orders of user are kept inside the collection*/
-  orders?: PuRelOrder[];
 }
 
 /**
@@ -128,7 +122,6 @@ export interface InUser {
  * @interface
  * OutRelation BlogPost: This is an interface for those relations of blogPost that are not kept inside blogPost collection */
 export interface OutUser {
-  orders: IOrder[];
 }
 
 export interface IUser extends PuUser, EmUser {}
