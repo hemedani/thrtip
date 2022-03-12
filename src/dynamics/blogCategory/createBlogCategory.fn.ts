@@ -1,7 +1,5 @@
-import { blogCategories, IBlogCategory, PuFile } from "../../schemas/mod.ts";
-import { Bson } from "../../utils/deps.ts";
-import { checkValidation } from "./../../utils/mod.ts";
-import { emptyTokenError, notFoundError } from "../../utils/mod.ts";
+import { blogCategories, IBlogCategory, PuFile } from "../../schemas/mode.ts";
+import {   checkValidation, Bson, emptyTokenError, notFoundError } from "../../utils/mod.ts";
 import { isAuthFn } from "../../utils/mod.ts";
 import { checkRoleFn } from "../../utils/mod.ts";
 import { Context } from "../utils/context.ts";

@@ -3,3 +3,4 @@ export * from "./serveLesan.ts";
 export * from "./serveStatic.ts";
 export * from "./checkWants.ts";
 export * from "./deps.ts";
+export * from "./chechValidatin.ts";
