@@ -14,7 +14,7 @@ import {
   RCountry,
   RState,
   stateSelectable,
-} from "./index";
+} from "./mode.ts";
 import {
   Base,
   checkRelation,
@@ -23,7 +23,7 @@ import {
   Iterate,
   ObjectID,
   RType,
-} from "./utils";
+} from "./utils/mod.ts";
 
 export enum Gender {
   Male = "Male",
@@ -279,4 +279,4 @@ export const userSelectable = (depth: number | UserSelectInp = 3) => {
   return completeObj;
 };
 
-export const state = db.collection<IUser>("User");
+export const user = db.collection<IUser>("User");
