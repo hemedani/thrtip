@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { PuState, RState, stateSelectable } from "../../schemas/mod.ts";
+import { PuState, RState, stateSelectable } from "../../schemas/mode.ts";
 import {
   basePaginationValidationObject,
   PaginationType,
