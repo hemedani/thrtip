@@ -1,6 +1,6 @@
 import { checkStatesDetails, getStatesDetails } from "./getStates.type.ts";
 import { checkValidation } from "./../../utils/mod.ts";
-import { IState } from "../../schemas/mod.ts";
+import { IState } from "../../schemas/mode.ts";
 import { Context } from "../utils/context.ts";
 import { getStates } from "./sharedFunctions/getStates.ts";
 import { Bson } from "../../utils/deps.ts";

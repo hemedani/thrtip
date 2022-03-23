@@ -1,5 +1,5 @@
 import { addToPromotion } from "../../isdb/blog/blogFirstPage/actions/addToPromotion.ts";
-import { blogPosts } from "../../schemas/mod.ts";
+import { blogPosts } from "../../schemas/mode.ts";
 import { checkRoleFn } from "../../utils/mod.ts";
 import { checkValidation } from "../../utils/mod.ts";
 import { Bson } from "../../utils/deps.ts";

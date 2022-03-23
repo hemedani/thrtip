@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { commentSelectable, RComment } from "../../schemas/mod.ts";
+import { commentSelectable, RComment } from "../../schemas/mode.ts";
 import { ObjectId, ObjectID } from "../../utils/deps.ts";
 const v = new FastestValidator();
 export const schema = {

@@ -1,6 +1,6 @@
 import { ValidationError } from "https://cdn.esm.sh/v45/fastest-validator@1.11.1/dist/index";
 import { getUser } from "./funcs/getUser.ts";
-import { IUser, users } from "../../schemas/mod.ts";
+import { IUser, users } from "../../schemas/mode.ts";
 import { isAuthFn } from "../../utils/mod.ts";
 import { throwError } from "../../utils/mod.ts";
 import { Context } from "../utils/context.ts";

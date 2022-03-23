@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { blogPostSelectable, RBlogPost } from "../../schemas/mod.ts";
+import { blogPostSelectable, RBlogPost } from "../../schemas/mode.ts";
 
 const v = new FastestValidator();
 

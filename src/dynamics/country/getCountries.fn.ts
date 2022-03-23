@@ -5,7 +5,7 @@ import {
   isAuthFn,
   notFoundError,
 } from "./../../utils/mod.ts";
-import { ICountry } from "../../schemas/mod.ts";
+import { ICountry } from "../../schemas/mode.ts";
 import { Context } from "../utils/context.ts";
 import { getCountries } from "./sharedFunctions/getCountries.ts";
 import {

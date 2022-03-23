@@ -1,4 +1,4 @@
-import { blogPosts } from "../../schemas/mod.ts";
+import { blogPosts } from "../../schemas/mode.ts";
 import { emptyTokenError, notFoundError, throwError } from "../../utils/mod.ts";
 import { Context } from "../utils/context.ts";
 import { blogCategories, IBlogCategory } from "./../../schemas/blogCategory.ts";

@@ -4,3 +4,13 @@ export * from "./serveStatic.ts";
 export * from "./checkWants.ts";
 export * from "./deps.ts";
 export * from "./chechValidatin.ts";
+export * from './checkRole.ts'
+export * from './getPureDoc.ts'
+export * from './isAuthFn.ts'
+export * from './makeLookUp.ts'
+export * from './makePagination.ts'
+export * from './makeProjections.ts'
+export * from './manuplateEmbedded.ts'
+export * from './basePagination.ts'
+export * from './regCode.ts'
+export * from './refinePhone.ts'

@@ -4,7 +4,7 @@ import {
   isAuthFn,
   notFoundError,
 } from "./../../utils/mod.ts";
-import { cities, ICity, states, users, PuCity } from "../../schemas/mod.ts";
+import { cities, ICity, states, users, PuCity } from "../../schemas/mode.ts";
 import { checkValidation } from "../../utils/mod.ts";
 import { throwError } from "../../utils/mod.ts";
 import { Context } from "./../utils/context.ts";

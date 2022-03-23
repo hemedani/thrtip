@@ -1,4 +1,4 @@
-import { ICountry, RCountry, countries } from "../../../schemas/mod.ts";
+import { ICountry, RCountry, countries } from "../../../schemas/mode.ts";
 import { Bson } from "../../../utils/deps.ts";
 import { makeProjections } from "../../../utils/mod.ts";
 import { throwError } from "../../../utils/mod.ts";

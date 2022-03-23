@@ -2,7 +2,7 @@ import { getCountryFn } from "./getCountry.fn.ts";
 import FastestValidator, {
   ValidationError,
 } from "https://esm.sh/fastest-validator@1";
-import { ICountry } from "../../schemas/mod.ts";
+import { ICountry } from "../../schemas/mode.ts";
 import { throwError } from "../../utils/mod.ts";
 import { createCountryFn } from "./createCountry.fn.ts";
 import { deleteCountryFn } from "./deleteCountry.fn.ts";

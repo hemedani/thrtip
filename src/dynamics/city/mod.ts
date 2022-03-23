@@ -4,7 +4,7 @@ import { createCityFn } from "./createCity.fn.ts";
 import FastestValidator, {
   ValidationError,
 } from "https://esm.sh/fastest-validator@1";
-import { ICity } from "../../schemas/mod.ts";
+import { ICity } from "../../schemas/mode.ts";
 import { deleteCityFn } from "./deleteCity.fn.ts";
 import { getCitiesFn } from "./getCities.fn.ts";
 import { throwError } from "../../utils/mod.ts";

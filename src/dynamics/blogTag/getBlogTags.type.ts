@@ -8,7 +8,7 @@ import {
   PuBlogTag,
   RBlogTag,
 } from "../../schemas/blogTag.ts";
-import { IBlogPost } from "../../schemas/mod.ts";
+import { IBlogPost } from "../../schemas/mode.ts";
 import FastestValidator from "https://esm.sh/fastest-validator@1";
 
 const v = new FastestValidator();

@@ -1,4 +1,4 @@
-import { IContactUs, contactUs } from "./../../schemas/mod.ts";
+import { IContactUs, contactUs } from "../../schemas/mode.ts";
 import { Context } from "../mod.ts";
 import { ICreateContactUsDetails } from "./createContactUs.type.ts";
 import { Bson } from "../../utils/deps.ts";

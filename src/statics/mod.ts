@@ -4,7 +4,6 @@ import FastestValidator, {
 import { Context } from "../dynamics/mod.ts";
 import { Doits, StaticModels, throwError } from "../utils/mod.ts";
 import { BlogFirstPageDoit, blogFirstPageFns } from "./blogFirstPage/mod.ts";
-import { ShopPageDoit, shopPageFns } from "./shop/mod.ts";
 import { StoreHomePageDoit, storeHomePageFns } from "./storeHomePage/mod.ts";
 
 const v = new FastestValidator();
@@ -24,11 +23,10 @@ export const staticFns = (
   const checkModel = check({ model });
   return checkModel === true
     ? {
-        ["BlogFirstPage"]: () => blogFirstPageFns(doit as BlogFirstPageDoit),
-        ["StoreHomePage"]: () =>
-          storeHomePageFns(doit as StoreHomePageDoit, details, context),
-        ["ShopPage"]: () => shopPageFns(doit as ShopPageDoit),
-      }[model]()
+      ["BlogFirstPage"]: () => blogFirstPageFns(doit as BlogFirstPageDoit),
+      ["StoreHomePage"]: () =>
+        storeHomePageFns(doit as StoreHomePageDoit, details, context),
+    }[model]()
     : throwError((checkModel as ValidationError[])[0].message);
 };
 

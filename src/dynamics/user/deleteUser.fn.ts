@@ -1,5 +1,5 @@
 import { ValidationError } from "https://cdn.esm.sh/v45/fastest-validator@1.11.1/dist/index";
-import { shoppingCarts, users } from "../../schemas/mod.ts";
+import { users } from "../../schemas/mode.ts";
 import { Bson } from "../../utils/deps.ts";
 import { throwError } from "./../../utils/mod.ts";
 import { Context } from "./../utils/context.ts";
@@ -25,7 +25,7 @@ export const deleteUserFn: DeleteOrderFn = async (details, context) => {
   // TODO:1.delete the user from blog
 
   /*delete the user from shoppingCart/fabricStudioProperties*/
-  await shoppingCarts.deleteOne({ userId: userId });
+  // await shoppingCarts.deleteOne({ userId: userId });
 
   /**delete the user from userTable*/
   const deletedUser = await users.deleteOne({

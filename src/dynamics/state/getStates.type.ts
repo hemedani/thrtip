@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { ICity, RCity, citySelectable, PuCity } from "../../schemas/mod.ts";
+import { ICity, RCity, citySelectable, PuCity } from "../../schemas/mode.ts";
 import { ObjectId, ObjectID } from "../../utils/deps.ts";
 
 import {

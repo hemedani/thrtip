@@ -1,4 +1,4 @@
-import { countries, ICountry } from "../../schemas/mod.ts";
+import { countries, ICountry } from "../../schemas/mode.ts";
 import { Bson } from "../../utils/deps.ts";
 import {
   checkRoleFn,

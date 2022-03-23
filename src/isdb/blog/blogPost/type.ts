@@ -1,4 +1,4 @@
-import { IBlogPost, PuBlogTag, PuComment } from "./../../../schemas/mod.ts";
+import { IBlogPost, PuBlogTag, PuComment } from "../../../schemas/mode.ts";
 /**
  * @interface
  * an interface for

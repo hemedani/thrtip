@@ -1,5 +1,5 @@
-import { ICountry, PuRelCountry } from "./../../schemas/mod.ts";
-import { ICity, cities, states, IState } from "../../schemas/mod.ts";
+import { ICountry, PuRelCountry } from "../../schemas/mode.ts";
+import { ICity, cities, states, IState } from "../../schemas/mode.ts";
 import { Bson } from "../../utils/deps.ts";
 import {
   checkRoleFn,

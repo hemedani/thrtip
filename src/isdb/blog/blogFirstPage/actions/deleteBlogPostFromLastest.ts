@@ -1,5 +1,5 @@
+import { blogPosts } from "../../../../schemas/mode.ts";
 import { firstPageSlice } from "./../mod.ts";
-import { blogPosts } from "../../../../schemas/mod.ts";
 
 export const deleteBlogPostFromLatest = async (_id: string) => {
   const { getState, validate, setState } = firstPageSlice;
@@ -22,7 +22,10 @@ export const deleteBlogPostFromLatest = async (_id: string) => {
         summary: x.summary,
         totalComments: x.totalComments,
         createdAt: x.createdAt,
-        blogCategory: { _id: x.blogCategory._id.toHexString(), name: x.blogCategory.name },
+        blogCategory: {
+          _id: x.blogCategory._id.toHexString(),
+          name: x.blogCategory.name,
+        },
         photo: {
           _id: x.photo._id.toHexString(),
           filename: x.photo.filename,
@@ -34,11 +37,11 @@ export const deleteBlogPostFromLatest = async (_id: string) => {
           name: x.author.name,
           profilePicture: x.author.profilePicture
             ? {
-                _id: x.author.profilePicture._id.toHexString(),
-                filename: x.author.profilePicture.filename,
-                type: x.author.profilePicture.type,
-                size: x.author.profilePicture.size,
-              }
+              _id: x.author.profilePicture._id.toHexString(),
+              filename: x.author.profilePicture.filename,
+              type: x.author.profilePicture.type,
+              size: x.author.profilePicture.size,
+            }
             : undefined,
         },
       };

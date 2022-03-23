@@ -4,7 +4,7 @@ import {
   IContactUs,
   PuContactUs,
   RContactUs,
-} from "./../../../schemas/mod.ts";
+} from "../../../schemas/mode.ts";
 import { makeProjections } from "./../../../utils/mod.ts";
 import { makePagination } from "../../../utils/mod.ts";
 import { Bson } from "../../../utils/deps.ts";

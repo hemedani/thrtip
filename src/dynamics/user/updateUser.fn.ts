@@ -3,7 +3,7 @@ import { getPureDoc } from "./../../utils/mod.ts";
 import { countries } from "./../../schemas/country.ts";
 import { throwError } from "./../../utils/mod.ts";
 import { getUser } from "./funcs/getUser.ts";
-import { cities, IUser, states, users } from "../../schemas/mod.ts";
+import { cities, IUser, states, users } from "../../schemas/mode.ts";
 import { isAuthFn } from "../../utils/mod.ts";
 import { Context } from "../utils/context.ts";
 import { checkRoleFn } from "../../utils/mod.ts";

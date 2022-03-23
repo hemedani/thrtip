@@ -1,7 +1,7 @@
 import { Context } from "./../utils/context.ts";
 import { checkValidation } from "../../utils/mod.ts";
 import { checkGetCityDetails, getCityDetails } from "./getCity.type.ts";
-import { ICity } from "../../schemas/mod.ts";
+import { ICity } from "../../schemas/mode.ts";
 import { getCity } from "./sharedFunctions/getCity.ts";
 import { Bson } from "../../utils/deps.ts";
 

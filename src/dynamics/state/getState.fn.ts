@@ -1,4 +1,4 @@
-import { IState } from "../../schemas/mod.ts";
+import { IState } from "../../schemas/mode.ts";
 import { Bson } from "../../utils/deps.ts";
 import {
   checkRoleFn,

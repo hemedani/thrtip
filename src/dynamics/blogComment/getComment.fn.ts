@@ -5,7 +5,7 @@ import {
   getCommentDetails,
 } from "./getComment.type.ts";
 import { checkValidation } from "../../utils/mod.ts";
-import { IComment } from "../../schemas/mod.ts";
+import { IComment } from "../../schemas/mode.ts";
 import { Bson } from "../../utils/deps.ts";
 
 type GetCommentFn = (

@@ -142,3 +142,4 @@ export const stateSelectable: any = (depth: number | StateInp = 2): any => {
 };
 
 export const state = db.collection<IState>("State");
+export const states = db.collection<IState>("States");

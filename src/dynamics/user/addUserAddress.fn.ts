@@ -1,6 +1,6 @@
 import { ValidationError } from "https://cdn.esm.sh/v45/fastest-validator@1.11.1/dist/index";
 import { countries, PuRelCountry } from "./../../schemas/country.ts";
-import { cities, IUser, PuRelCity, PuRelState, states, UserAddress, users } from "../../schemas/mod.ts";
+import { cities, IUser, PuRelCity, PuRelState, states, UserAddress, users } from "../../schemas/mode.ts";
 import { Bson } from "../../utils/deps.ts";
 import { getPureDoc } from "./../../utils/mod.ts";
 import { throwError } from "./../../utils/mod.ts";

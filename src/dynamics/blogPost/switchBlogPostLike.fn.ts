@@ -1,6 +1,6 @@
 import { getBlogPost } from "./funcs/getBlogPost.ts";
 import { getPureDoc } from "./../../utils/mod.ts";
-import { blogPosts, IBlogPost } from "../../schemas/mod.ts";
+import { blogPosts, IBlogPost } from "../../schemas/mode.ts";
 import { Context } from "../utils/context.ts";
 import { emptyTokenError } from "../../utils/mod.ts";
 import { isAuthFn } from "../../utils/mod.ts";

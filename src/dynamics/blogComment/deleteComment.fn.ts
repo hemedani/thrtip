@@ -1,4 +1,4 @@
-import { IComment } from "./../../schemas/mod.ts";
+import { IComment } from "../../schemas/mode.ts";
 import { Context } from "../utils/context.ts";
 import { emptyTokenError, notFoundError } from "../../utils/mod.ts";
 import { bidirectionalDeleteBlogComment } from "./utils/bidirectionalDeleteBlogComment.ts";

@@ -1,4 +1,4 @@
-import { updateLatestFromStorePage } from './../../isdb/store/storeHomePage/actions/updateLatestFromStorePage.ts';
+import { updateLatestFromStorePage } from '../../isdb/mod.ts';
 import { updatePopular } from "./../../isdb/blog/blogFirstPage/actions/updatePopular.ts";
 import {
   PromotionsBlogPosts,
@@ -18,14 +18,14 @@ import {
   blogPosts,
   blogTags,
   IBlogPost,
-} from "./../../schemas/mod.ts";
+} from "../../schemas/mode.ts";
 import { getBlogPost } from "./funcs/getBlogPost.ts";
 import {
   checkUpdateBlogPost,
   UpdateBlogPostDetails,
 } from "./updateBlogPost.type.ts";
 import { getDocumentsFromDocumentRefs } from "./utills/getDocumentsFromDocumentsRef.ts";
-import { StoreLatestBlogPosts } from "../../isdb/store/storeHomePage/types.ts";
+import { StoreLatestBlogPosts } from "../../isdb/mod.ts";
 
 type UpdateBlogPost = (
   details: UpdateBlogPostDetails,

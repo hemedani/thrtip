@@ -1,4 +1,4 @@
-import { IBlogPost } from "./../../schemas/mod.ts";
+import { IBlogPost } from "../../schemas/mode.ts";
 import { Bson } from "../../utils/deps.ts";
 import { checkValidation } from "./../../utils/mod.ts";
 import { getBlogPosts } from "./funcs/getBlogPosts.ts";

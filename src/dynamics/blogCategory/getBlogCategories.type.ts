@@ -1,10 +1,10 @@
-import { PuBlogCategory } from "./../../schemas/mod.ts";
+import { PuBlogCategory } from "../../schemas/mode.ts";
 import FastestValidator from "https://esm.sh/fastest-validator@1";
 import {
   IBlogPost,
   blogCategorySelectable,
   RBlogCategory,
-} from "../../schemas/mod.ts";
+} from "../../schemas/mode.ts";
 import {
   basePaginationValidationObject,
   PaginationType,

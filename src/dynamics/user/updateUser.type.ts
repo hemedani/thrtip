@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { PuFile, RUser, userSelectable } from "../../schemas/mod.ts";
+import { PuFile, RUser, userSelectable } from "../../schemas/mode.ts";
 import { ObjectID } from "../../utils/deps.ts";
 /**
  * this is a validator for create user, using fastest validator

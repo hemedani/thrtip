@@ -1,4 +1,4 @@
-import { blogTagSelectable, RBlogTag } from "../../schemas/mod.ts";
+import { blogTagSelectable, RBlogTag } from "../../schemas/mode.ts";
 import FastestValidator from "https://esm.sh/fastest-validator@1";
 
 /**

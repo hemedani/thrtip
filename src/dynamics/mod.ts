@@ -7,19 +7,11 @@ import { BlogPostDoit, blogPostFns } from "./blogPost/mod.ts";
 import { BlogTagDoit, blogTagFns } from "./blogTag/mod.ts";
 import { CityDoit, cityFns } from "./city/mod.ts";
 import { CountryDoit, countryFns } from "./country/mod.ts";
-import { OrderDoit, orderFns } from "./order/mod.ts";
-import { ShopDoit, shopFns } from "./shop/mod.ts";
-import { ShoppingCartDoit, shoppingCartFns } from "./shoppingCart/mod.ts";
 import { StateDoit, stateFns } from "./state/mod.ts";
 import { UserDoit, usrFns } from "./user/mod.ts";
 import { Context } from "./utils/mod.ts";
-import { WareDoit, wareFns } from "./ware/mod.ts";
-import { WareTypeDoit, wareTypeFns } from "./wareType/mod.ts";
 import { Doits, DynamicModels, throwError } from "../utils/mod.ts";
 import { ContactUsDoit, contactUsFns } from "./contactUs/mod.ts";
-import { InvoiceDoit, invoiceFns } from "./invoice/mod.ts";
-import { WareCategoryDoit, wareCategoryFns } from "./wareCategory/mod.ts";
-import { RateDoit, rateFns } from "./rate/mod.ts";
 
 const v = new FastestValidator();
 const check = v.compile({
@@ -71,21 +63,8 @@ export const dynamicFns = (
           await commentFns(doit as CommentDoit, details, context),
         ["BlogPost"]: async () =>
           await blogPostFns(doit as BlogPostDoit, details, context),
-        ["WareType"]: async () =>
-          await wareTypeFns(doit as WareTypeDoit, details, context),
-        ["WareCategory"]: async () =>
-          await wareCategoryFns(doit as WareCategoryDoit, details, context),
-        ["Ware"]: async () => await wareFns(doit as WareDoit, details, context),
-        ["ShoppingCart"]: async () =>
-          await shoppingCartFns(doit as ShoppingCartDoit, details, context),
-        ["Order"]: async () =>
-          await orderFns(doit as OrderDoit, details, context),
-        ["Shop"]: async () => await shopFns(doit as ShopDoit, details, context),
         ["ContactUs"]: async () =>
           await contactUsFns(doit as ContactUsDoit, details, context),
-        ["Invoice"]: async () =>
-          await invoiceFns(doit as InvoiceDoit, details, context),
-        ["Rate"]: async () => await rateFns(doit as RateDoit, details, context),
       }[model]()
     : throwError((checkModel as ValidationError[])[0].message);
 };
@@ -96,7 +75,6 @@ export * from "./blogPost/mod.ts";
 export * from "./blogTag/mod.ts";
 export * from "./city/mod.ts";
 export * from "./country/mod.ts";
-export * from "./order/mod.ts";
 export * from "./state/mod.ts";
 export * from "./user/mod.ts";
 export * from "./utils/mod.ts";

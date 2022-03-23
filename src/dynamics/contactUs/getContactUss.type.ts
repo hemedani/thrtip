@@ -7,7 +7,7 @@ import {
   contactUsSelectable,
   PuContactUs,
   RContactUs,
-} from "../../schemas/mod.ts";
+} from "../../schemas/mode.ts";
 import FastestValidator from "https://esm.sh/fastest-validator@1";
 
 const v = new FastestValidator();

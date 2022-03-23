@@ -1,5 +1,5 @@
 import { ValidationError } from "https://cdn.esm.sh/v45/fastest-validator@1.11.1/dist/index";
-import { IUser, users } from "../../schemas/mod.ts";
+import { IUser, users } from "../../schemas/mode.ts";
 import { Bson } from "../../utils/deps.ts";
 import { checkRoleFn, isAuthFn } from "../../utils/mod.ts";
 import { Context } from "../utils/context.ts";

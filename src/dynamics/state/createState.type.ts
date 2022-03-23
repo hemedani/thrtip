@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { RState, stateSelectable } from "../../schemas/mod.ts";
+import { RState, stateSelectable } from "../../schemas/mode.ts";
 const v = new FastestValidator();
 
 /**

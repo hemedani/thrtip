@@ -1,4 +1,4 @@
-import { blogPosts } from "../../../../schemas/mod.ts";
+import { blogPosts } from "../../../../schemas/mode.ts";
 import { firstPageSlice } from "../mod.ts";
 import {
   BlogFirstPage,
@@ -35,11 +35,11 @@ export const initializeBlogFirstPage = async () => {
       summary: x.summary,
       photo: x.photo
         ? {
-            _id: x.photo._id.toHexString(),
-            filename: x.photo.filename,
-            type: x.photo.type,
-            size: x.photo.size,
-          }
+          _id: x.photo._id.toHexString(),
+          filename: x.photo.filename,
+          type: x.photo.type,
+          size: x.photo.size,
+        }
         : undefined,
     };
   });

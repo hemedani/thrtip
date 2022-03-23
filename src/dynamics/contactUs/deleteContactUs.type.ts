@@ -1,4 +1,4 @@
-import { RContactUs } from "./../../schemas/mod.ts";
+import { RContactUs } from "../../schemas/mode.ts";
 import { blogTagSelectable, RBlogTag } from "../../schemas/blogTag.ts";
 import { ObjectID } from "../../utils/deps.ts";
 import FastestValidator from "https://esm.sh/fastest-validator@1";

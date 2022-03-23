@@ -1,2 +1,1 @@
-export * from "./blog/mod.ts";
-export * from "./store/mod.ts";
+export * from "./storeHomePage/mod.ts";

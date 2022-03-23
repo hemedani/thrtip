@@ -3,7 +3,7 @@ import {
   blogPostSelectable,
   PuBlogPost,
   RBlogPost,
-} from "../../schemas/mod.ts";
+} from "../../schemas/mode.ts";
 import {
   basePaginationValidationObject,
   PaginationType,

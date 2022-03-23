@@ -1,5 +1,5 @@
 import { checkValidation } from "./../../utils/mod.ts";
-import { ICity } from "../../schemas/mod.ts";
+import { ICity } from "../../schemas/mode.ts";
 import { Context } from "../utils/context.ts";
 import { getCitiesDetails, checkCitiesDetails } from "./getCities.type.ts";
 import { getCities } from "./sharedFunctions/getCities.ts";

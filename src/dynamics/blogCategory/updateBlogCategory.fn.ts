@@ -5,7 +5,7 @@ import { isAuthFn } from "../../utils/mod.ts";
 import { emptyTokenError, notFoundError } from "../../utils/mod.ts";
 import { Context } from "../utils/context.ts";
 import { blogCategories, IBlogCategory } from "./../../schemas/blogCategory.ts";
-import { blogPosts } from "./../../schemas/mod.ts";
+import { blogPosts } from "../../schemas/mode.ts";
 import { getBlogCategory } from "./funcs/getBlogCategory.ts";
 import {
   checkUpdateBlogCategory,

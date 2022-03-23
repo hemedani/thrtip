@@ -1,4 +1,4 @@
-import { cities, ICity, PuCity, RCity } from "../../../schemas/mod.ts";
+import { cities, ICity, PuCity, RCity } from "../../../schemas/mode.ts";
 import { Bson } from "../../../utils/deps.ts";
 import { makePagination, PaginationInput } from "../../../utils/mod.ts";
 import { makeProjections } from "../../../utils/mod.ts";

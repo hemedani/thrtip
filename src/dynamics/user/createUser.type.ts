@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { Level, PuFile, RUser, userSelectable } from "../../schemas/mod.ts";
+import { Level, PuFile, RUser, userSelectable } from "../../schemas/mode.ts";
 import { ObjectID } from "../../utils/deps.ts";
 const v = new FastestValidator();
 

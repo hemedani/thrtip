@@ -8,6 +8,7 @@ import {
   PuRelCity,
   PuRelCountry,
   PuRelState,
+  PuFile,
   RCity,
   RCountry,
   RState,
@@ -86,6 +87,7 @@ export interface PuUser extends Base {
   email?: string;
   isActive?: boolean;
   creditCardNumber: number;
+  profilePicture: PuFile;
 }
 
 /**
@@ -273,3 +275,4 @@ export const userSelectable = (depth: number | UserSelectInp = 3) => {
 };
 
 export const user = db.collection<IUser>("User");
+export const users = db.collection<IUser>("Users");

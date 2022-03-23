@@ -1,5 +1,5 @@
 import { PuFile } from "./../../schemas/upload.ts";
-import { StoreLatestBlogPosts } from "./../../isdb/store/storeHomePage/mod.ts";
+import { StoreLatestBlogPosts } from "../../isdb/mod.ts";
 import { addToLatest } from "./../../isdb/blog/blogFirstPage/actions/addToLatest.ts";
 import { checkRoleFn } from "../../utils/mod.ts";
 import { checkValidation } from "../../utils/mod.ts";
@@ -11,7 +11,7 @@ import {
   blogPosts as bp,
   blogTags,
   IBlogPost,
-} from "./../../schemas/mod.ts";
+} from "../../schemas/mode.ts";
 import { emptyTokenError, notFoundError } from "./../../utils/mod.ts";
 import { Context } from "./../utils/context.ts";
 import {
@@ -21,7 +21,7 @@ import {
 import { getBlogPost } from "./funcs/getBlogPost.ts";
 import { LatestBlogPosts } from "../../isdb/blog/blogFirstPage/types.ts";
 import { Bson } from "../../utils/deps.ts";
-import { addLatestPostsToStoreFirstPage } from "../../isdb/store/storeHomePage/actions/mod.ts";
+import { addLatestPostsToStoreFirstPage } from "../../isdb/mod.ts";
 
 type CreateBlogPost = (
   details: createBlogPostDetails,
@@ -128,14 +128,14 @@ export const createBlogPost: CreateBlogPost = async (details, context) => {
     author: {
       _id: createdBlogPostDoc!.author._id!.toHexString(),
       name: createdBlogPostDoc!.author.name!,
-      profilePicture: createdBlogPostDoc!.author.profilePicture
-        ? {
-            _id: createdBlogPostDoc!.author.profilePicture._id.toHexString(),
-            filename: createdBlogPostDoc!.author.profilePicture.filename,
-            size: createdBlogPostDoc!.author.profilePicture.size,
-            type: createdBlogPostDoc!.author.profilePicture.type,
-          }
-        : undefined,
+      // profilePicture: createdBlogPostDoc!.author.profilePicture
+      //   ? {
+      //       _id: createdBlogPostDoc!.author.profilePicture._id.toHexString(),
+      //       filename: createdBlogPostDoc!.author.profilePicture.filename,
+      //       size: createdBlogPostDoc!.author.profilePicture.size,
+      //       type: createdBlogPostDoc!.author.profilePicture.type,
+      //     }
+      //   : undefined,
     },
     totalComments: createdBlogPostDoc!.totalComments!,
     photo: createdBlogPostDoc!.photo

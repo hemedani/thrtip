@@ -92,7 +92,7 @@ const decodeBody = async (req: Request): Promise<Body> => {
     : throwError("content type is not correct");
 };
 export type StreamsModels = "File";
-export type StaticModels = "BlogFirstPage" | "StoreHomePage" | "ShopPage";
+export type StaticModels = "BlogFirstPage" | "StoreHomePage" ;
 
 export type DynamicModels =
   | "User"

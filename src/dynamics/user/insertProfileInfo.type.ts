@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { userSelectable, RUser } from "../../schemas/mod.ts";
+import { userSelectable, RUser } from "../../schemas/mode.ts";
 /**
  * this is a validator for create user, using fastest validator
  * the result is a boolean

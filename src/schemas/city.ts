@@ -140,5 +140,6 @@ export const citySelectable: any = (depth: number | CityInp = 2): any => {
   return completeObj;
 };
 
-export const city = db.collection<ICity>("Plan");
+export const city = db.collection<ICity>("city");
+export const cities = db.collection<ICity>("Cities");``
 

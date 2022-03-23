@@ -1,4 +1,4 @@
-import { IState, RState, states } from "../../../schemas/mod.ts";
+import { IState, RState, states } from "../../../schemas/mode.ts";
 import { Bson } from "../../../utils/deps.ts";
 import { makeProjections } from "../../../utils/mod.ts";
 import { throwError } from "../../../utils/mod.ts";

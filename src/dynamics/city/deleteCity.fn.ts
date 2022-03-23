@@ -1,5 +1,5 @@
 import { ValidationError } from "https://cdn.esm.sh/v45/fastest-validator@1.11.1/dist/index";
-import { ICity, cities, states, users } from "../../schemas/mod.ts";
+import { ICity, cities, states, users } from "../../schemas/mode.ts";
 import { Bson } from "../../utils/deps.ts";
 import { throwError } from "../../utils/mod.ts";
 import { Context } from "./../utils/context.ts";

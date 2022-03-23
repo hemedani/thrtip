@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { RUser, userSelectable } from "../../schemas/mod.ts";
+import { RUser, userSelectable } from "../../schemas/mode.ts";
 const v = new FastestValidator();
 
 export const schema = {

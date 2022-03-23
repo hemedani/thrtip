@@ -1,5 +1,5 @@
 import { Context } from "./../utils/context.ts";
-import { IBlogPost, IContactUs } from "../../schemas/mod.ts";
+import { IBlogPost, IContactUs } from "../../schemas/mode.ts";
 import {
   checkGetContactUsDetails,
   getContactUsDetails,

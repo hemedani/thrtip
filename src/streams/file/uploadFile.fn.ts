@@ -1,8 +1,6 @@
-import {
-  checkUploadFileDetails,
-  uploadFileDetails,
-} from "./uploadFile.type.ts";
 import { Context } from "../../dynamics/utils/mod.ts";
+import { IFile } from "../../schemas/mode.ts";
+import { Bson } from "../../utils/deps.ts";
 import {
   checkRoleFn,
   checkValidation,
@@ -10,10 +8,12 @@ import {
   isAuthFn,
   notFoundError,
 } from "../../utils/mod.ts";
-import { IFile } from "../../schemas/mod.ts";
-import { getFile } from "./sharedFunctions/getFile.ts";
-import { Bson } from "../../utils/deps.ts";
 import { uploadFile } from "../utils/uploadFunction.ts";
+import { getFile } from "./sharedFunctions/getFile.ts";
+import {
+  checkUploadFileDetails,
+  uploadFileDetails,
+} from "./uploadFile.type.ts";
 
 type UploadFile = (
   context: Context,
@@ -22,7 +22,6 @@ type UploadFile = (
 
 export const uploadFileFn: UploadFile = async (context, details) => {
   /**
-   *
    * 0.check the token and auth
    * 1.get the file from details
    * 2.call upload function
@@ -44,7 +43,7 @@ export const uploadFileFn: UploadFile = async (context, details) => {
   } = details;
   /**upload the file  */
   const uploadedFile = await uploadFile(file, user);
-  /**just return the data of the uploaded file,
+  /** just return the data of the uploaded file,
    * the Get part is fix, and we do not get it from user
    */
   return await getFile({

@@ -1,5 +1,5 @@
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { fileSelectable, RFile } from "../../schemas/mod.ts";
+import { fileSelectable, RFile } from "../../schemas/mode.ts";
 const v = new FastestValidator();
 export const schema = {
   details: {

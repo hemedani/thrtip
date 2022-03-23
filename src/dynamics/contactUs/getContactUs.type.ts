@@ -1,6 +1,6 @@
 import { ObjectID } from "../../utils/deps.ts";
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { contactUsSelectable, RContactUs } from "../../schemas/mod.ts";
+import { contactUsSelectable, RContactUs } from "../../schemas/mode.ts";
 
 const v = new FastestValidator();
 export const schema = {

@@ -5,7 +5,8 @@ import {
   RBlogCategory,
 } from "../../schemas/blogCategory.ts";
 import { ObjectID } from "../../utils/deps.ts";
-import { PuFile } from "../../schemas/mod.ts";
+import { PuFile } from "../../schemas/mode.ts"
+;
 
 /**
  * this is a validator for create blogCategory, using fastest validator

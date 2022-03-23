@@ -1,4 +1,4 @@
-import { IBlogTag } from "./../../schemas/mod.ts";
+import { IBlogTag } from "../../schemas/mode.ts";
 import {
   checkRoleFn,
   checkValidation,

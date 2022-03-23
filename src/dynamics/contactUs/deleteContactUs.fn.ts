@@ -1,6 +1,6 @@
-import { IContactUs } from "./../../schemas/mod.ts";
+import { IContactUs } from "../../schemas/mode.ts";
 import { checkRoleFn } from "./../../utils/mod.ts";
-import { contactUs } from "../../schemas/mod.ts";
+import { contactUs } from "../../schemas/mode.ts";
 import { isAuthFn } from "../../utils/mod.ts";
 import { emptyTokenError, notFoundError } from "../../utils/mod.ts";
 import { Context } from "../utils/context.ts";

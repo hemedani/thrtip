@@ -5,7 +5,7 @@ import {
   citySelectable,
   PuCountry,
   countrySelectable,
-} from "../../schemas/mod.ts";
+} from "../../schemas/mode.ts";
 
 import {
   basePaginationValidationObject,

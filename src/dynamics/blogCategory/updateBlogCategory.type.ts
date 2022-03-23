@@ -3,7 +3,7 @@ import {
   blogCategorySelectable,
   RBlogCategory,
 } from "../../schemas/blogCategory.ts";
-import { PuFile } from "../../schemas/mod.ts";
+import { PuFile } from "../../schemas/mode.ts";
 import { ObjectID } from "../../utils/deps.ts";
 const v = new FastestValidator();
 

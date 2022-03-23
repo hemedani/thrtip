@@ -1,5 +1,5 @@
 import { Context } from "./../utils/context.ts";
-import { IBlogPost, IBlogTag } from "../../schemas/mod.ts";
+import { IBlogPost, IBlogTag } from "../../schemas/mode.ts";
 import { getBlogTag } from "./funcs/getBlogTag.ts";
 import {
   checkGetBlogTagDetails,

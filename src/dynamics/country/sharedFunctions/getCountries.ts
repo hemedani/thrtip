@@ -3,7 +3,7 @@ import {
   ICountry,
   PuCountry,
   RCountry,
-} from "../../../schemas/mod.ts";
+} from "../../../schemas/mode.ts";
 import { Bson } from "../../../utils/deps.ts";
 import { makePagination, PaginationInput } from "../../../utils/mod.ts";
 import { makeProjections } from "../../../utils/mod.ts";

@@ -12,7 +12,7 @@ import {
   createCommentDetails,
 } from "./createComment.type.ts";
 import { getComment } from "./funcs/getComment.ts";
-import { blogPosts, wares } from "../../schemas/mod.ts";
+import { blogPosts } from "../../schemas/mode.ts";
 import { Bson, ObjectId } from "../../utils/deps.ts";
 
 const createComment = async (
@@ -152,17 +152,17 @@ export const createCommentFn: CreateComment = async (details, context) => {
     }));
 
   /**if blogPostId is null/undefined then add the comment to wares*/
-  blogPostId ??
-    (await manEmbedded({
-      array: [wareId!.toString()],
-      schema: wares,
-      embeddedField: "comments",
-      document: [pureComment!],
-      limit: 50,
-      headOrTail: "tail",
-      sortBy: "email",
-      sortOrder: "Ascending",
-    }));
+  // blogPostId ??
+  //   (await manEmbedded({
+  //     array: [wareId!.toString()],
+  //     schema: wares,
+  //     embeddedField: "comments",
+  //     document: [pureComment!],
+  //     limit: 50,
+  //     headOrTail: "tail",
+  //     sortBy: "email",
+  //     sortOrder: "Ascending",
+  //   }));
 
   const commentWithUser = {
     ...pureComment,

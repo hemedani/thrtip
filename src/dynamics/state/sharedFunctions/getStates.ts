@@ -1,4 +1,4 @@
-import { states, IState, PuState, RState } from "../../../schemas/mod.ts";
+import { states, IState, PuState, RState } from "../../../schemas/mode.ts";
 import { PaginationInput } from "../../../utils/mod.ts";
 import { Bson } from "../../../utils/deps.ts";
 import { makePagination } from "../../../utils/mod.ts";

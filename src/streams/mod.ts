@@ -21,7 +21,7 @@ export const streamsFns = (
   const checkModel = check({ model });
   return checkModel === true
     ? {
-        ["File"]: async () => await fileFns(doit as FileDoit, details, context),
-      }[model]()
+      ["File"]: async () => await fileFns(doit as FileDoit, details, context),
+    }[model]()
     : throwError((checkModel as ValidationError[])[0].message);
 };

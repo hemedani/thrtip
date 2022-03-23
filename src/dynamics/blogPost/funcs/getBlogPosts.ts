@@ -3,7 +3,7 @@ import {
   IBlogPost,
   PuBlogPost,
   RBlogPost,
-} from "../../../schemas/mod.ts";
+} from "../../../schemas/mode.ts";
 import { PaginationInput } from "../../../utils/mod.ts";
 import { Bson } from "../../../utils/deps.ts";
 import { makePagination } from "../../../utils/mod.ts";

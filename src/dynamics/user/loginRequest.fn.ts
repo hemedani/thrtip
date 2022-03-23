@@ -1,5 +1,5 @@
 import { setLoginToken } from "./../../utils/services/inMemoryDb/login.ts";
-import { countries, Level, users } from "../../schemas/mod.ts";
+import { countries, Level, users } from "../../schemas/mode.ts";
 import {
   createVerificationCode,
   throwError,

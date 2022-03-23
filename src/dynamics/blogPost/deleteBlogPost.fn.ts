@@ -4,13 +4,13 @@ import { Bson } from "../../utils/deps.ts";
 import { isAuthFn } from "../../utils/mod.ts";
 import { notFoundError } from "../../utils/mod.ts";
 import { Context } from "../utils/context.ts";
-import { comments, blogPosts, IBlogPost } from "./../../schemas/mod.ts";
+import { comments, blogPosts, IBlogPost } from "../../schemas/mode.ts";
 import {
   checkDeleteBlogPost,
   DeleteBlogPostDetails,
 } from "./deleteBlogPost.type.ts";
 import { deleteBlogPostFromLatest } from "../../isdb/blog/blogFirstPage/mod.ts";
-import { deleteBlogPostFromLatestStoreHomePage } from "../../isdb/store/storeHomePage/actions/deleteBlogPostFromLatestStoreHomePage.ts";
+import { deleteBlogPostFromLatestStoreHomePage } from "../../isdb/mod.ts";
 
 type DeleteBlogPost = (
   details: DeleteBlogPostDetails,

@@ -1,5 +1,5 @@
 import { checkRoleFn } from "./../../utils/mod.ts";
-import { blogPosts, blogTags, IBlogTag } from "../../schemas/mod.ts";
+import { blogPosts, blogTags, IBlogTag } from "../../schemas/mode.ts";
 import { isAuthFn } from "../../utils/mod.ts";
 import { emptyTokenError, notFoundError } from "../../utils/mod.ts";
 import { Context } from "../utils/context.ts";

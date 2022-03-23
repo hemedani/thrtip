@@ -9,7 +9,7 @@ import {
   IBlogCategory,
   PuBlogCategory,
   RBlogCategory,
-} from "./../../../schemas/mod.ts";
+} from "../../../schemas/mode.ts";
 
 type GetBlogCategoriesInput = {
   filter: Bson.Document;

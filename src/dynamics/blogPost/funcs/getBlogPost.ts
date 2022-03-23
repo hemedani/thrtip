@@ -1,6 +1,6 @@
 import { getComments } from "./../../blogComment/funcs/getComments.ts";
 import { makeLookUp, throwError } from "../../../utils/mod.ts";
-import { blogPosts, IBlogPost, RBlogPost } from "./../../../schemas/mod.ts";
+import { blogPosts, IBlogPost, RBlogPost } from "../../../schemas/mode.ts";
 import { makeProjections } from "./../../../utils/mod.ts";
 import { Bson } from "../../../utils/deps.ts";
 // TODO: make this work!!!!!!!!

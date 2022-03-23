@@ -2,7 +2,7 @@ import {
   checkDeleteCountry,
   IDeleteCountryDetails,
 } from "./deleteCountry.type.ts";
-import { countries, ICountry, states } from "../../schemas/mod.ts";
+import { countries, ICountry, states } from "../../schemas/mode.ts";
 import {
   checkRoleFn,
   checkValidation,

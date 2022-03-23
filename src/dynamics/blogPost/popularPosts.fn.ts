@@ -1,6 +1,6 @@
 import { addToPopular } from "../../isdb/blog/blogFirstPage/actions/mod.ts";
 import { PopularBlogPosts } from "../../isdb/blog/blogFirstPage/mod.ts";
-import { blogPosts } from "./../../schemas/mod.ts";
+import { blogPosts } from "../../schemas/mode.ts";
 export const popularPostsFn = async () => {
   let popularPosts = [];
   const maxNumOfPopularPosts = 10;

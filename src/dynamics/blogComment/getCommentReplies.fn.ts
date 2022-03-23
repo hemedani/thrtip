@@ -1,5 +1,5 @@
 import { checkValidation } from "../../utils/mod.ts";
-import { comments, IComment, RComment } from "./../../schemas/mod.ts";
+import { comments, IComment, RComment } from "../../schemas/mode.ts";
 import { checkGetBlogCommentRepliesDetails } from "./getCommentReplies.type.ts";
 
 interface getCommenRepliestDetails {

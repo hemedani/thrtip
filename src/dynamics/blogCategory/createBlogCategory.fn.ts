@@ -13,6 +13,7 @@ import { getBlogCategory } from "./funcs/getBlogCategory.ts";
  * @param icon the url of icon of the blogCategory
  * @param description the description about the blogCategory
  */
+
 const createBlogCategory = async (
     name: string,
     enName: string,

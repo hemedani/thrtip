@@ -1,6 +1,6 @@
 import { RType } from "./../../schemas/utils/rType.ts";
 import FastestValidator from "https://esm.sh/fastest-validator@1";
-import { RUser, userSelectable } from "../../schemas/mod.ts";
+import { RUser, userSelectable } from "../../schemas/mode.ts";
 import { fieldType } from "../../schemas/utils/fieldType.ts";
 
 const v = new FastestValidator();

@@ -1,4 +1,4 @@
-import { IBlogCategory } from "./../../schemas/mod.ts";
+import { IBlogCategory } from "../../schemas/mode.ts";
 import { checkValidation } from "../../utils/mod.ts";
 import { Bson } from "../../utils/deps.ts";
 import { getBlogCategories } from "./funcs/getBlogCategories.ts";
